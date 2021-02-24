@@ -1,0 +1,14 @@
+name: 'Simple Webhook Action'
+description: 'A simple Github workflow action to call a remote webhook'
+inputs:
+  webhook_url:
+    description: 'The HTTP URI of the webhook endpoint to invoke'
+    required: true
+  webhook_auth:
+    description: 'Credentials to be used for BASIC authentication'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'terminal'
+  color: 'gray-dark'
